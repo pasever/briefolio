@@ -102,7 +102,7 @@
 	text-decoration: none;
 }
 .camera_loader {
-    background: #fff url(../images/camera-loader.gif) no-repeat center;
+  background: #fff url(../images/camera-loader.gif) no-repeat center;
 	background: rgba(255, 255, 255, 0.9) url(../images/camera-loader.gif) no-repeat center;
 	border: 1px solid #ffffff;
 	border-radius: 18px;
@@ -175,8 +175,6 @@
 	height: 20px;
 }
 
-
-
 .slide_wrapper .camera_next {
 	background: url(../images/prevnext_bg.png) 0 0 repeat;
 	width: 70px;	
@@ -232,6 +230,7 @@
 .camera_thumbs_cont ul li+li  {
 	margin-left: 11px !important;
 }
+
 .camera_thumbs_cont ul li > img {
 	cursor: pointer;
 	opacity: 1 !important;
@@ -347,39 +346,3 @@
 	background-position: 0 0;
 	background-color: #287e7d;
 }
-
-
-
-/*
-.camera_prev, 
-.camera_next {
-	display: block;
-	position: absolute;
-	width: 77px;
-	height: 77px;
-	left: 131px;
-	cursor: pointer;
-	bottom: 21px;
-	top: 50%;
-	margin-top: -38px;
-	z-index: 999;
-	background: url(../images/prevnext.png) 0 0 no-repeat;
-	transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-}
-
-.camera_next {
-	left: auto;
-	right: 131px;
-	background-position: right 0;
-}
-
-.camera_prev:hover,
-.camera_next:hover  {
-	opacity: 0.8;
-}
-
-
-
-*/
