@@ -39,13 +39,13 @@
     <header id="home" class="page">
       <div id="camera_wrap">
         <div data-src="images/slide-1.jpg">
-          <div class="caption fadeIn">Your Photographer <span class="bull"></span> Coder <span class="bull"></span> Designer</div>
+          <div class="caption fadeIn"><b>Evgheni Pascalov</b><span class="bull"></span> Front End</div>
         </div>
         <div data-src="images/slide-2.jpg">
-          <div class="caption fadeIn">Impressive Designs, Suitable for Cool Projects</div>
+          <div class="caption fadeIn"><b>Evgheni Pascalov</b> Back End</div>
         </div>
         <div data-src="images/slide-3.jpg">
-          <div class="caption fadeIn">Designs that Work for Your Benefits</div>
+          <div class="caption fadeIn"><b>Evgheni Pascalov</b> Custom Solutions</div>
         </div>
       </div>
     </header>
@@ -287,7 +287,7 @@
       jQuery('#camera_wrap').camera({
         loader: false,
         pagination: true,
-        minHeight: '500',
+        minHeight: '800',
         thumbnails: false,
         height: '44.42708333333333%',
         caption: true,
@@ -315,116 +315,6 @@
         console.log('done scrolling');
       }
     });
-  </script>
-
-  <script type="text/javascript">
-    google_api_map_init();
-
-    function google_api_map_init() {
-      var map;
-      var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068, 14));
-      var styleArray = [{
-          "featureType": "water",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#193341"
-          }]
-        },
-        {
-          "featureType": "landscape",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#2c5a71"
-          }]
-        },
-        {
-          "featureType": "road",
-          "elementType": "geometry",
-          "stylers": [{
-              "color": "#29768a"
-            },
-            {
-              "lightness": -37
-            }
-          ]
-        },
-        {
-          "featureType": "poi",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#406d80"
-          }]
-        },
-        {
-          "featureType": "transit",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#406d80"
-          }]
-        },
-        {
-          "elementType": "labels.text.stroke",
-          "stylers": [{
-              "visibility": "on"
-            },
-            {
-              "color": "#3e606f"
-            },
-            {
-              "weight": 2
-            },
-            {
-              "gamma": 0.84
-            }
-          ]
-        },
-        {
-          "elementType": "labels.text.fill",
-          "stylers": [{
-            "color": "#ffffff"
-          }]
-        },
-        {
-          "featureType": "administrative",
-          "elementType": "geometry",
-          "stylers": [{
-              "weight": 0.6
-            },
-            {
-              "color": "#1a3541"
-            }
-          ]
-        },
-        {
-          "elementType": "labels.icon",
-          "stylers": [{
-            "visibility": "off"
-          }]
-        },
-        {
-          "featureType": "poi.park",
-          "elementType": "geometry",
-          "stylers": [{
-            "color": "#2c5a71"
-          }]
-        }
-      ]
-
-      function initialize() {
-        var mapOptions = {
-          zoom: 13,
-          center: coordData,
-          scrollwheel: false,
-          styles: styleArray
-        }
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-        google.maps.event.addDomListener(window, 'resize', function() {
-          map.setCenter(coordData);
-          var center = map.getCenter();
-        });
-      }
-      google.maps.event.addDomListener(window, "load", initialize);
-    }
   </script>
   <!--[if IE]><script type="text/javascript" src="js/excanvas.js"></script><![endif]-->
   <script src="js/jquery.knob.js"></script>
